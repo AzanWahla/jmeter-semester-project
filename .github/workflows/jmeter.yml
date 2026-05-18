@@ -20,7 +20,8 @@ jobs:
       - name: Download Apache JMeter
         run: |
           wget -q https://downloads.apache.org/jmeter/binaries/apache-jmeter-5.6.3.tgz
-          tar -xzf apache-jmeter-5.6.3.tgz && mv apache-jmeter-5.6.3 jmeter
+          tar -xzf apache-jmeter-5.6.3.tgz
+          mv apache-jmeter-5.6.3 jmeter
 
       - name: Run Performance Tests
         run: |
